@@ -1,14 +1,16 @@
+import { validatedQueryParams } from "@/app/utils/utils";
 import { createActionHeaders } from "@solana/actions";
 
 const headers = createActionHeaders();
 
 export const POST = async (req: Request) => {
-    console.log(req);
+    const requestUrl = new URL(req.url);
+    const {id} = validatedQueryParams(requestUrl);
     console.log("castVote/link/route");
-    const requestUrl = new URL('https://x.com/cryptoutils');
+    const Url = new URL(`https://verdancy.cryptoutils.xyz/polls/${id}`);
     return Response.json({
         type: 'external-link',
-        externalLink: requestUrl.toString(),
+        externalLink: Url.toString(),
     }, {
         headers
     });

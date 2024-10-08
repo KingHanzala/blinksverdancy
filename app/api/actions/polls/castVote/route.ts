@@ -36,8 +36,8 @@ export const POST = async (req: Request) => {
               actions: [
                   {
                       type: 'external-link',
-                      label: 'Follow us on X',
-                      href: `${baseHref}/link`,
+                      label: 'Check Results',
+                      href: `${baseHref}/link?id=${id}`,
                   }
               ]
           },
