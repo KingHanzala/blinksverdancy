@@ -23,5 +23,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - BACKEND_URL (From where you are fetching/pushing data if any)
 - JWT_SECRET (Any random string)
 
-Built by https://x.com/kinghanzala_
 Contact me at https://t.me/kinghanzala
